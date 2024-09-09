@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "9000:80"
+    volumes:
+      - /root/bookmark-website/site:/usr/share/nginx/html:ro
+
+
+  web2:
+    image: nginx:latest
+    ports:
+      - "9005:80"
+    volumes:
+      - /root/bookmark-website/site1:/usr/share/nginx/html:ro
