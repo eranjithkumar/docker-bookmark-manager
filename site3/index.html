@@ -5,31 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bookmarks</title>
     <style>
-        /* Dark theme CSS */
+        /* Modern, minimalist theme */
         body {
-            background-color: #121212;
-            color: #ffffff;
-            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #f5f5f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0 20px;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            border-bottom: 1px solid #444;
+            padding-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-top: 40px;
+            color: #00aaff;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin: 10px 0;
         }
 
         a {
-            color: #1e90ff;
+            color: #00aaff;
+            text-decoration: none;
+            padding: 5px 0;
+            display: inline-block;
         }
 
             a:hover {
-                color: #00ff7f;
+                color: #66ccff;
+                border-bottom: 1px solid #00aaff;
             }
 
-        h1, h2 {
-            color: #ff6347;
-        }
-
-        /* Maintained by text */
+        /* Footer */
         .footer {
-            color: #32cd32;
             font-size: 0.8em;
             text-align: left;
-            margin-top: 20px;
+            margin: 40px 0;
+            color: #888;
         }
     </style>
 </head>
@@ -39,7 +67,6 @@
     <h2>PING Engines</h2>
     <ul>
         <li><a href="http://10.4.0.16:8080/smokeping/" target="_blank">Smoke Ping</a></li>
-        <!-- Add more search engine bookmarks here -->
     </ul>
 
     <h2>NETFLOW Engine</h2>
@@ -47,14 +74,12 @@
         <li><a href="http://10.14.7.222:8080/" target="_blank">Philadelphia</a></li>
         <li><a href="http://10.14.7.157:8080/" target="_blank">Redlands</a></li>
         <li><a href="http://10.14.7.254:8080/" target="_blank">Wineville</a></li>
-        <!-- Add more development bookmarks here -->
     </ul>
 
     <h2>SNMP Engine</h2>
     <ul>
         <li><a href="http://10.4.0.16:8000/" target="_blank">LibreNMS-Azure</a></li>
         <li><a href="http://10.14.7.222:8000/" target="_blank">LibreNMSPhil</a></li>
-        <!-- Add more development bookmarks here -->
     </ul>
 
     <h2>EXTERNAL Monitoring</h2>
@@ -62,11 +87,8 @@
         <li><a href="https://hetrixtools.com/dashboard/" target="_blank">Herixtools</a></li>
         <li><a href="https://activearccms.icxservice.com/venues" target="_blank">ARC Wifi</a></li>
         <li><a href="https://desk.zoho.com/agent/dcgfulfillment/dcg-fulfillment/tickets/teamsq/duedate/616113000020307015" target="_blank">Zoho</a></li>
-        <!-- Add more news bookmarks here -->
     </ul>
 
-    <!-- Add more topics and bookmarks as needed -->
-    <!-- Footer with Maintained by text -->
     <div class="footer">
         Maintained by Ranjit
     </div>

@@ -15,3 +15,26 @@ services:
       - "9005:80"
     volumes:
       - /root/bookmark-website/site1:/usr/share/nginx/html:ro
+
+
+  web3:
+    image: nginx:latest
+    ports:
+      - "9006:80"
+    volumes:
+      - /root/bookmark-website/site2:/usr/share/nginx/html:ro
+
+
+  web4:
+    image: nginx:latest
+    ports:
+      - "9007:80"
+    volumes:
+      - /root/bookmark-website/site3:/usr/share/nginx/html:ro
+
+  web5:
+    image: nginx:latest
+    ports:
+      - "9008:80"
+    volumes:
+      - /root/bookmark-website/site4:/usr/share/nginx/html:ro

@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\site1",
+    "\\site2",
+    "\\site3",
+    "\\site4"
   ],
-  "SelectedNode": "\\C:\\Users\\Admin\\Source\\Repos\\Ranjit-Github\\docker-bookmark-manager",
+  "SelectedNode": "\\site",
   "PreviewInSolutionExplorer": false
 }

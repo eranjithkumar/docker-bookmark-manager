@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarks</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        /* Global Styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #f3f4f7, #f8f9fa);
+            color: #333;
+        }
+
+        h1, h2 {
+            font-family: 'Merriweather', serif;
+            color: #007bff;
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, #007bff, #0056b3);
+            border: none;
+            transition: transform 0.2s ease-in-out;
+        }
+
+            .btn-primary:hover {
+                transform: scale(1.05);
+            }
+
+        .card {
+            border: none;
+            border-radius: 0.75rem;
+            box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease-in-out;
+        }
+
+            .card:hover {
+                transform: translateY(-5px);
+            }
+
+        /* Hero Section */
+        .jumbotron {
+            background-color: #007bff;
+            color: white;
+            margin-bottom: 2rem;
+        }
+
+        /* Footer Styling */
+        .footer {
+            background-color: #e9ecef;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+
+            .footer p {
+                margin: 0;
+            }
+
+            .footer i {
+                color: #6c757d;
+                font-size: 1.5rem;
+            }
+
+        /* Sticky Navbar */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">DCG Network Links Hub</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#ping">PING Engines</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#netflow">NETFLOW Engines</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#snmp">SNMP Engines</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#external">External Monitoring</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="jumbotron jumbotron-fluid text-center">
+        <div class="container">
+            <h1 class="display-4">Welcome to DCG Network Links Hub</h1>
+            <p class="lead">Your centralized hub for network monitoring tools and services.</p>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <!-- PING Engines Section -->
+        <section id="ping" data-aos="fade-up">
+            <h2 class="mb-4"><i class="fas fa-network-wired"></i> PING Engines</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card mb-4">
+                        <!-- <img src="network-tools.jpg" class="card-img-top" alt="Network Tools"> -->
+                        <div class="card-body">
+                            <h5 class="card-title">Smoke Ping</h5>
+                            <p class="card-text">Monitor latency and packet loss with Smoke Ping.</p>
+                            <a href="http://10.4.0.16:8080/smokeping/" class="btn btn-primary" target="_blank">Visit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NETFLOW Engines Section -->
+        <section id="netflow" class="mt-4" data-aos="fade-up">
+            <h2 class="mb-4"><i class="fas fa-project-diagram"></i> NETFLOW Engines</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Philadelphia</h5>
+                            <p class="card-text">Netflow monitoring for Philadelphia.</p>
+                            <a href="http://10.14.7.222:8080/" class="btn btn-primary" target="_blank">Visit</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Redlands</h5>
+                            <p class="card-text">Netflow monitoring for Redlands.</p>
+                            <a href="http://10.14.7.157:8080/" class="btn btn-primary" target="_blank">Visit</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Wineville</h5>
+                            <p class="card-text">Netflow monitoring for Wineville.</p>
+                            <a href="http://10.14.7.254:8080/" class="btn btn-primary" target="_blank">Visit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SNMP Engines Section -->
+        <section id="snmp" class="mt-4" data-aos="fade-up">
+            <h2 class="mb-4"><i class="fas fa-server"></i> SNMP Engines</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">LibreNMS-Azure</h5>
+                            <p class="card-text">SNMP monitoring for Azure.</p>
+                            <a href="http://10.4.0.16:8000/" class="btn btn-primary" target="_blank">Visit</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">LibreNMSPhil</h5>
+                            <p class="card-text">SNMP monitoring for Philadelphia.</p>
+                            <a href="http://10.14.7.222:8000/" class="btn btn-primary" target="_blank">Visit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- External Monitoring Section -->
+        <section id="external" class="mt-4" data-aos="fade-up">
+            <h2 class="mb-4"><i class="fas fa-globe"></i> External Monitoring</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Hetrixtools</h5>
+                            <p class="card-text">Monitor external systems with Hetrixtools.</p>
+                            <a href="https://hetrixtools.com/dashboard/" class="btn btn-primary" target="_blank">Visit</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">UptimeRobot</h5>
+                            <p class="card-text">Monitor external systems with UptimeRobot.</p>
+                            <a href="https://uptimerobot.com/dashboard.php" class="btn btn-primary" target="_blank">Visit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer py-4 text-center">
+        <div class="container">
+            <p class="m-0">Maintained by Ranjit</p>
+            <div>
+                <a href="#" class="text-muted mx-2"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-muted mx-2"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>
