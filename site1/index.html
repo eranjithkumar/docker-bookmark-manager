@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bookmarks</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
     <style>
         /* Dark theme CSS */
         body {
@@ -16,60 +19,160 @@
             color: #1e90ff;
         }
 
-        a:hover {
-            color: #00ff7f;
-        }
+            a:hover {
+                color: #00ff7f;
+            }
 
         h1, h2 {
             color: #ff6347;
         }
 
-        /* Maintained by text */
+        /* Footer styling */
         .footer {
             color: #32cd32;
             font-size: 0.8em;
-            text-align: left;
+            text-align: center;
             margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>DCG Network Links Hub</h1>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">DCG Network Links Hub</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#ping">PING Engines</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#netflow">NETFLOW Engines</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#snmp">SNMP Engines</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#external">External Monitoring</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-    <h2>PING Engines</h2>
-    <ul>
-        <li><a href="http://10.4.0.16:8080/smokeping/" target="_blank">Smoke Ping</a></li>
-        <!-- Add more search engine bookmarks here -->
-    </ul>
+    <div class="container mt-5">
+        <!-- PING Engines Section -->
+        <section id="ping">
+            <h2>PING Engines</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Smoke Ping</h5>
+                            <a href="http://10.4.0.16:8080/smokeping/" class="btn btn-primary" target="_blank">Visit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <h2>NETFLOW Engine</h2>
-    <ul>
-        <li><a href="http://10.14.7.222:8080/" target="_blank">Philadelphia</a></li>
-        <li><a href="http://10.14.7.157:8080/" target="_blank">Redlands</a></li>
-        <li><a href="http://10.14.7.254:8080/" target="_blank">Wineville</a></li>
-        <!-- Add more development bookmarks here -->
-    </ul>
+        <!-- NETFLOW Engines Section -->
+        <section id="netflow" class="mt-4">
+            <h2>NETFLOW Engines</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Philadelphia</h5>
+                            <a href="http://10.14.7.222:8080/" class="btn btn-primary" target="_blank">Visit</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Redlands</h5>
+                            <a href="http://10.14.7.157:8080/" class="btn btn-primary" target="_blank">Visit</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Wineville</h5>
+                            <a href="http://10.14.7.254:8080/" class="btn btn-primary" target="_blank">Visit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <h2>SNMP Engine</h2>
-    <ul>
-        <li><a href="http://10.4.0.16:8000/" target="_blank">LibreNMS-Azure</a></li>
-        <li><a href="http://10.14.7.222:8000/" target="_blank">LibreNMSPhil</a></li>
-        <!-- Add more development bookmarks here -->
-    </ul>
-    
-    <h2>EXTERNAL Monitoring</h2>
-    <ul>
-        <li><a href="https://hetrixtools.com/dashboard/" target="_blank">Herixtools</a></li>
-        <li><a href="https://activearccms.icxservice.com/venues" target="_blank">ARC Wifi</a></li>
-        <li><a href="https://desk.zoho.com/agent/dcgfulfillment/dcg-fulfillment/tickets/teamsq/duedate/616113000020307015" target="_blank">Zoho</a></li>
-        <!-- Add more news bookmarks here -->
-    </ul>
+        <!-- SNMP Engines Section -->
+        <section id="snmp" class="mt-4">
+            <h2>SNMP Engines</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">LibreNMS-Azure</h5>
+                            <a href="http://10.4.0.16:8000/" class="btn btn-primary" target="_blank">Visit</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">LibreNMSPhil</h5>
+                            <a href="http://10.14.7.222:8000/" class="btn btn-primary" target="_blank">Visit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Add more topics and bookmarks as needed -->
-
-    <!-- Footer with Maintained by text -->
-    <div class="footer">
-        Maintained by Ranjit
+        <!-- External Monitoring Section -->
+        <section id="external" class="mt-4">
+            <h2>External Monitoring</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Hetrixtools</h5>
+                            <a href="https://hetrixtools.com/dashboard/" class="btn btn-primary" target="_blank">Visit</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">ARC Wifi</h5>
+                            <a href="https://activearccms.icxservice.com/venues" class="btn btn-primary" target="_blank">Visit</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Zoho</h5>
+                            <a href="https://desk.zoho.com/agent/dcgfulfillment/dcg-fulfillment/tickets/teamsq/duedate/616113000020307015" class="btn btn-primary" target="_blank">Visit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-center py-3">
+        <div class="container">
+            <span class="text-muted">Maintained by Ranjit</span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
