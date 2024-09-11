@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarks</title>
+    <style>
+        /* Minimalist, network-monitoring theme */
+        body {
+            background-color: #181818;
+            color: #e0e0e0;
+            font-family: 'Roboto Mono', monospace;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            text-transform: uppercase;
+            color: #ff6f61;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #444;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.4em;
+            text-transform: uppercase;
+            color: #00adb5;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #444;
+            padding-bottom: 8px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-bottom: 40px;
+        }
+
+        li {
+            margin: 12px 0;
+        }
+
+        a {
+            font-size: 1.1em;
+            color: #ffd369;
+            text-decoration: none;
+            padding: 5px 0;
+            display: inline-block;
+            transition: color 0.3s ease;
+        }
+
+            a:hover {
+                color: #00ffdd;
+                text-decoration: underline;
+            }
+
+        /* Footer */
+        .footer {
+            font-size: 0.85em;
+            color: #888;
+            margin-top: 50px;
+        }
+
+        /* Align content centrally for better readability */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>DCG Network Links Hub</h1>
+
+        <h2>PING Engines</h2>
+        <ul>
+            <li><a href="http://10.4.0.16:8080/smokeping/" target="_blank">Smoke Ping</a></li>
+        </ul>
+
+        <h2>NETFLOW Engine</h2>
+        <ul>
+            <li><a href="http://10.14.7.222:8080/" target="_blank">Philadelphia</a></li>
+            <li><a href="http://10.14.7.157:8080/" target="_blank">Redlands</a></li>
+            <li><a href="http://10.14.7.254:8080/" target="_blank">Wineville</a></li>
+        </ul>
+
+        <h2>SNMP Engine</h2>
+        <ul>
+            <li><a href="http://10.4.0.16:8000/" target="_blank">LibreNMS-Azure</a></li>
+            <li><a href="http://10.14.7.222:8000/" target="_blank">LibreNMSPhil</a></li>
+        </ul>
+
+        <h2>EXTERNAL Monitoring</h2>
+        <ul>
+            <li><a href="https://hetrixtools.com/dashboard/" target="_blank">Herixtools</a></li>
+            <li><a href="https://activearccms.icxservice.com/venues" target="_blank">ARC Wifi</a></li>
+            <li><a href="https://desk.zoho.com/agent/dcgfulfillment/dcg-fulfillment/tickets/teamsq/duedate/616113000020307015" target="_blank">Zoho</a></li>
+        </ul>
+
+        <div class="footer">
+            Maintained by Ranjit
+        </div>
+    </div>
+</body>
+</html>
